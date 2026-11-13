@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fbf6ec;
+  color: #2b2b2b;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+/* ---------- Top bar ---------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  height: 60px;
+  border-radius: 8px;
+}
+
+.tags {
+  text-align: right;
+}
+
+.tag {
+  color: #8b3a1f;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.tag-sub {
+  color: #444;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+/* ---------- Title ---------- */
+.title-block {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title-block h1 {
+  color: #5b2c8d;
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.title-block h2 {
+  color: #333;
+  font-size: 1.15rem;
+  font-weight: 600;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- Details row ---------- */
+.details-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0d9c8;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.detail {
+  flex: 1;
+  min-width: 150px;
+}
+
+.detail .label {
+  color: #c0522f;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.detail .value {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* ---------- Purple banner ---------- */
+.banner {
+  background-color: #4b2274;
+  color: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.banner-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: #f2c4a0;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.banner-link {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.qr {
+  height: 60px;
+  width: 60px;
+  background: white;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+/* ---------- Abstract & Topics ---------- */
+.abstract, .topics {
+  margin-bottom: 45px;
+}
+
+.abstract h3, .topics h3 {
+  color: #4b2274;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.abstract p {
+  margin-bottom: 12px;
+  line-height: 1.65;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.topics ul {
+  padding-left: 20px;
+}
+
+.topics li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ---------- Speakers ---------- */
+.speakers {
+  margin-bottom: 50px;
+}
+
+.speakers h3 {
+  color: #2f6b4f;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.speaker-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.speaker-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background-color: #eee;
+}
+
+.speaker-info .name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.speaker-info .affiliation {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ---------- Schedule ---------- */
+.schedule {
+  margin-bottom: 50px;
+}
+
+.schedule h3 {
+  color: #2f6b4f;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.talk-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.talk-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #4b2274;
+  margin-bottom: 4px;
+}
+
+.talk-speaker {
+  font-size: 0.85rem;
+  color: #c0522f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.talk-desc {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ---------- Organizers ---------- */
+.organizers {
+  border: 1px solid #e0d9c8;
+  border-radius: 10px;
+  padding: 20px 25px;
+}
+
+.organizers .label {
+  color: #c0522f;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.org-list {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+  .details-row {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
