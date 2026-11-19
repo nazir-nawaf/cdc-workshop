@@ -129,6 +129,45 @@ body {
   border-radius: 6px;
 }
 
+/* ---------- Bio toggle ---------- */
+.name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.toggle-btn {
+  background-color: #4b2274;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s;
+}
+
+.toggle-btn:hover {
+  background-color: #2f6b4f;
+}
+
+.bio {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.bio.show {
+  display: block;
+}
+
 /* ---------- Abstract & Topics ---------- */
 .abstract, .topics {
   margin-bottom: 45px;
