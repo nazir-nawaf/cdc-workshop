@@ -211,5 +211,13 @@
 
   </div>
 
+  <script>
+  function toggleBio(button) {
+    const bio = button.closest('.speaker-info').querySelector('.bio');
+    bio.classList.toggle('show');
+    button.textContent = bio.classList.contains('show') ? '−' : '+';
+  }
+  </script>
+
 </body>
 </html>
