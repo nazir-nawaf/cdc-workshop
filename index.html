@@ -101,7 +101,7 @@
           <div class="speaker-info">
             <div class="name-row">
               <p class="name">Jingtao Ma</p>
-              <button class="toggle-btn" onclick="toggleBio(this)">+</button>button>
+              <button class="toggle-btn" onclick="toggleBio(this)">+</button>
             </div>
             <p class="affiliation">Miovision</p>
             <p class="bio">
@@ -212,11 +212,11 @@
   </div>
 
   <script>
-  function toggleBio(button) {
-    const bio = button.closest('.speaker-info').querySelector('.bio');
-    bio.classList.toggle('show');
-    button.textContent = bio.classList.contains('show') ? '−' : '+';
-  }
+    function toggleBio(button) {
+      const bio = button.closest('.speaker-info').querySelector('.bio');
+      bio.classList.toggle('show');
+      button.textContent = bio.classList.contains('show') ? '−' : '+';
+    }
   </script>
 
 </body>
